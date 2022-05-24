@@ -15,11 +15,16 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-
-    void on_pushButton_exchange_clicked();
-
 private:
     Ui::MainWindow *ui;
+    void checkout();
+    bool math_checked;
+private slots:
+    void digit_numbers();
+    void on_pushButton_dot_clicked();
+    void operations();
+    void on_pushButton_ac_clicked();
+    void on_pushButton_equal_clicked();
+    void math_operations();
 };
 #endif // MAINWINDOW_H
